@@ -29,3 +29,20 @@ SELECT COUNT(Site_ID) / 108.53 FROM hiv_testing_locations
 SELECT Site_Name, Borough FROM hiv_testing_locations
 	WHERE Low_Cost = 'TRUE';
 ```
+# Which locations provide free HIV testing?
+```SQL
+SELECT Site_Name, Borough  FROM hiv_testing_locations
+    WHERE Free = 'TRUE'
+    ORDER BY Borough;
+```
+# Where can you walk in for a free HIV test? 
+```SQL
+SELECT Site_Name, Borough FROM hiv_testing_locations
+	WHERE Free = 'TRUE' and Intake = 'Walk-ins welcome'
+    ORDER BY Borough;
+``` 
+# What type of documentation do you need to bring for your test at Community Healthcare Network?
+```SQL
+SELECT Required_Documents from hiv_testing_locations
+	WHERE Agency_ID = 'Community Healthcare Network'; 
+```
