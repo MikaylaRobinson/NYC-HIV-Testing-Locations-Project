@@ -13,7 +13,7 @@ SELECT COUNT(Site_ID) FROM hiv_testing_locations
 ```
 # With varying size of boroughs, how many testing locations per square mile? (using square mileage data from wikipedia)
 ```SQL
-(SELECT COUNT(Site_ID) / 70.82FROM hiv_testing_locations 
+(SELECT COUNT(Site_ID) / 70.82 FROM hiv_testing_locations 
 	WHERE Borough = 'Brooklyn'); 
 SELECT COUNT(Site_ID) / 42.10 FROM hiv_testing_locations 
 	WHERE Borough = 'Bronx'; 
