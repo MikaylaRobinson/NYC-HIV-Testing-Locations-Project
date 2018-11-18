@@ -46,3 +46,8 @@ SELECT Site_Name, Borough FROM hiv_testing_locations
 SELECT Required_Documents from hiv_testing_locations
 	WHERE Agency_ID = 'Community Healthcare Network'; 
 ```
+# Where can someone receive care in Spanish?
+```SQL
+SELECT Site_Name, Site_Languages FROM hiv_testing_locations
+	WHERE Site_Languages LIKE '%spanish%';
+```
