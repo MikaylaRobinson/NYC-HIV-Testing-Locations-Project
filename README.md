@@ -15,4 +15,4 @@ The HIV Testing Locations dataset gives information on:
 ## Data source
 The data was downloaded as a CSV file and then converted to a MySQL database. 
 
-Source: [data.cityofnewyork.us](https://data.cityofnewyork.us/Health/HIV-Testing-Locations/72ss-25qh)
+Source: [NYC Open Data](https://data.cityofnewyork.us/Health/HIV-Testing-Locations/72ss-25qh)
